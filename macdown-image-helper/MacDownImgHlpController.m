@@ -52,7 +52,7 @@
     NSArray *objectsToPaste = [pasteboard readObjectsForClasses:classArray options:options];
     NSImage *image = [objectsToPaste objectAtIndex:0];
 //        NSImage *image = [pasteboard valueForPasteboardType:@"public.image"];
-    BOOL interlaced;
+    BOOL interlaced=true;
     
     // Set data into image,filename, interlaced
     NSData *data = [image TIFFRepresentation];
